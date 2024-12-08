@@ -262,6 +262,7 @@ public IEnumerable<WeatherForecastEx> GetExtended()
 ![текст ответа](./images/fig01.png)
 
 ![заголовки ответа](./images/fig02.png)
+
 Добавим заголовок
 ```
 X-Allow-Experimental-Api: *
@@ -273,6 +274,7 @@ X-Allow-Experimental-Api: *
 Повторим проверку для устаревшего API, сначала без заголовка X-Allow-Deprecated-Api:
 ![текст ответа](./images/fig05.png)
 ![заголовки ответа](./images/fig06.png)
+
 Установим заголовок:
 ```
 X-Allow-Deprecated-Api: /v1/weather
