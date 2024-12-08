@@ -285,6 +285,6 @@ X-Allow-Deprecated-Api: /v1/weather
 
 Если мы установим дату Sunset в атрибуте DeprecatedApi как прошедшую, то при выполнении запроса всегда будет возвращаться результат 410, т.к. API считается выведенным из эксплуатации.
 ## Полезные ссылки
-[[1]] [Experimental attribute - C# feature specifications | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-12.0/experimental-attribute)
-[[2]] [ObsoleteAttribute Класс (System) | Microsoft Learn](https://learn.microsoft.com/ru-ru/dotnet/api/system.obsoleteattribute?view=net-8.0)
-[[3]] [Calculate the Moon Phase With C# | Khalid Abuhakmeh](https://khalidabuhakmeh.com/calculate-moon-phase-with-csharp)
+* [[1]] [Experimental attribute - C# feature specifications | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-12.0/experimental-attribute)
+* [[2]] [ObsoleteAttribute Класс (System) | Microsoft Learn](https://learn.microsoft.com/ru-ru/dotnet/api/system.obsoleteattribute?view=net-8.0)
+* [[3]] [Calculate the Moon Phase With C# | Khalid Abuhakmeh](https://khalidabuhakmeh.com/calculate-moon-phase-with-csharp)
