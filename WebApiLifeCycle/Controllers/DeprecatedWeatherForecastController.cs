@@ -3,7 +3,7 @@ using WebApiLifeCycle.Filters;
 
 namespace WebApiLifeCycle.Controllers
 {
-  [DeprecatedApi(From = "2024-10-11", Sunset = "2024-12-05")]
+  [DeprecatedApi(From = "2024-10-11", Sunset = "2024-12-04")]
   [Obsolete]
   [ApiController]
   [Route("v1/weather")]
