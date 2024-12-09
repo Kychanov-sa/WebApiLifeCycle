@@ -7,7 +7,7 @@ namespace WebApiLifeCycle.Filters
   /// Фильтр для обработки запросов к устаревшему API.
   /// </summary>
   [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
-  public class DeprecatedApi : Attribute, IResourceFilter
+  public class DeprecatedApiAttribute : Attribute, IResourceFilter
   {
     /// <summary>
     /// Дата в формате ISO 8601, с которой API считается устаревшим.

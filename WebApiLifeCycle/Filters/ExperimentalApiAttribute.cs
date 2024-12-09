@@ -7,7 +7,7 @@ namespace WebApiLifeCycle.Filters
   /// Фильтр для обработки запросов к экспериментальному API.
   /// </summary>
   [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
-  public class ExperimentalApi : Attribute, IResourceFilter
+  public class ExperimentalApiAttribute : Attribute, IResourceFilter
   {
     #region IResourceFilter
 

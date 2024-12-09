@@ -82,8 +82,8 @@ Warning: 299 - "API {path} is deprecated"
 ## Реализация для ASP.NET Core WebApi
 
 Выше я указывал на наличие необходимых для аннотирования атрибутов Experimental и Obsolete. Однако, указанные классы атрибутов помечены как sealed и не допускают расширения. Поэтому добавим 2 новых атрибута:
-* ExperimentalApi - для обозначения экспериментального API
-* DeprecatedApi - для обозначения устаревшего API
+* ExperimentalApiAttribute - для обозначения экспериментального API
+* DeprecatedApiAttribute - для обозначения устаревшего API
 
 Для того, чтобы получить необходимое поведение, реализуем атрибуты в виде фильтров ресурсов из ASP.NET Core.
 
@@ -94,7 +94,7 @@ Warning: 299 - "API {path} is deprecated"
 /// Фильтр для обработки запросов к экспериментальному API.
 /// </summary>
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
-public class ExperimentalApi : Attribute, IResourceFilter
+public class ExperimentalApiAttribute : Attribute, IResourceFilter
 {
   #region IResourceFilter
 
@@ -155,7 +155,7 @@ public class ExperimentalApi : Attribute, IResourceFilter
 /// Фильтр для обработки запросов к устаревшему API.
 /// </summary>
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
-public class DeprecatedApi : Attribute, IResourceFilter
+public class DeprecatedApiAttribute : Attribute, IResourceFilter
 {
   /// <summary>
   /// Дата в формате ISO 8601, с которой API считается устаревшим.
